@@ -3,3 +3,8 @@ level = 'debug' # 'error', 'warning', 'info', or 'debug'
 
 [runner]
 fastReruns = false
+
+[server]
+enableCORS = false
+enableXsrfProtection = false
+enableStaticServing = true
