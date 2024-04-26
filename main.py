@@ -16,8 +16,12 @@ SCOPE = ''
 oauth2 = OAuth2Component(CLIENT_ID, CLIENT_SECRET, AUTHORIZE_URL, TOKEN_URL, REFRESH_TOKEN_URL, REVOKE_TOKEN_URL)
 
 result = oauth2.authorize_button("Authorize", REDIRECT_URI, SCOPE, height=800, width=400, use_container_width=True, extras_params={'response_type': 'code'})
-if result and 'code' in result:
+if result:
+    st.write(result)
+
+
+#if result and 'token' in result:
     # If authorization successful, save token in session state
-    st.session_state.token = result.get('code')
-    st.write(st.session_state.token)
-    st.rerun()
+    #st.session_state.token = result.get('token')
+    #st.write(st.session_state.token)
+    #st.rerun()
