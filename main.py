@@ -19,4 +19,5 @@ result = oauth2.authorize_button("Authorize", REDIRECT_URI, SCOPE, height=800, w
 if result and 'token' in result:
     # If authorization successful, save token in session state
     st.session_state.token = result.get('token')
+    st.write(st.session_state.token)
     st.rerun()
