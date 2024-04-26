@@ -1,8 +1,23 @@
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = false
+toolbarMode = "minimal"
+showSidebarNavigation = false
+
+[theme]
+base = "dark"
+primaryColor="rgb(62, 150, 170)"
+
 [logger]
-level = 'debug'
+level = 'debug' # 'error', 'warning', 'info', or 'debug'
 
 [server]
 enableStaticServing = true
 
 [runner]
 fastReruns = false
+
+[global]
+dataFrameSerialization = "legacy"
