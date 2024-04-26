@@ -1,0 +1,8 @@
+[logger]
+level = 'debug'
+
+[server]
+enableStaticServing = true
+
+[runner]
+fastReruns = false
