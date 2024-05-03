@@ -39,12 +39,12 @@ st.title("Google OIDC Example")
 st.write("This example shows how to use the raw OAuth2 component to authenticate with a Google OAuth2 and get email from id_token.")
 
 # create an OAuth2Component instance
-CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
-CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
+CLIENT_ID = st.secrets['oauthGoogleID']
+CLIENT_SECRET = st.secrets['oauthGoogleSecret']
 AUTHORIZE_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token"
 REVOKE_ENDPOINT = "https://oauth2.googleapis.com/revoke"
-REDRIECT_URI = os.environ.get("GOOGLE_REDIRECT_URI", "http://localhost:8501")
+REDRIECT_URI  = 'https://kaditest.streamlit.app/component/streamlit_oauth.authorize_button/index.html'
 
 
 if "auth" not in st.session_state:
