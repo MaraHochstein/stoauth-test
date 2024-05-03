@@ -1,1 +1,3 @@
-streamlit-oauth
+streamlit==1.28.1
+streamlit-oauth>=0.1.8
+python-dotenv>=1.0.0
