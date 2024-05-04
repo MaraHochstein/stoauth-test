@@ -17,7 +17,7 @@ CLIENT_SECRET = st.secrets['oauthGoogleSecret']
 AUTHORIZE_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token"
 REVOKE_ENDPOINT = "https://oauth2.googleapis.com/revoke"
-REDRIECT_URI  = 'https://kaditest.streamlit.app/component/streamlit_oauth.authorize_button/index.html'
+REDRIECT_URI  = 'https://kaditest.streamlit.app/component/streamlit_oauth.authorize_button'
 
 
 if "auth" not in st.session_state:
